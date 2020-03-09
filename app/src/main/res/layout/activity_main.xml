@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/textGasto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/textValor"
+        app:layout_constraintStart_toStartOf="@+id/spinnerGasto"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGasto" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/textData"
+        app:layout_constraintEnd_toEndOf="@+id/btnSelecione"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toEndOf="@+id/textValor"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGasto" />
+
+    <Button
+        android:id="@+id/btnSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSelecione"
+        app:layout_constraintBottom_toBottomOf="@+id/editValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/editDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/textData"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/branco"
+        app:layout_constraintStart_toStartOf="@+id/textValor"
+        app:layout_constraintTop_toBottomOf="@+id/textValor"
+        tools:text="@string/branco" />
+
+    <TextView
+        android:id="@+id/textDecricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/textDescricao"
+        app:layout_constraintStart_toStartOf="@+id/editValor"
+        app:layout_constraintTop_toBottomOf="@+id/editValor" />
+
+    <EditText
+        android:id="@+id/editDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/branco"
+        app:layout_constraintStart_toStartOf="@+id/textDecricao"
+        app:layout_constraintTop_toBottomOf="@+id/textDecricao" />
+
+    <TextView
+        android:id="@+id/textLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textLocal"
+        app:layout_constraintStart_toStartOf="@+id/editDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
+
+    <EditText
+        android:id="@+id/editLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/branco"
+        app:layout_constraintStart_toStartOf="@+id/textLocal"
+        app:layout_constraintTop_toBottomOf="@+id/textLocal" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLocal" />
+
+    <Spinner
+        android:id="@+id/spinnerGasto"
+        android:layout_width="341dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textGasto"
+        app:layout_constraintTop_toBottomOf="@+id/textGasto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
