@@ -8,4 +8,6 @@
     <string name="btnSelecione">SELECIONE</string>
     <string name="btnSalvar">SALVAR</string>
     <string name="branco"> </string>
+    <string name="textData1">Data 1</string>
+    <string name="textData2">Data 2</string>
 </resources>

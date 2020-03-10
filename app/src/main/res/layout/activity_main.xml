@@ -35,7 +35,7 @@
         android:layout_marginTop="36dp"
         android:text="@string/textData"
         app:layout_constraintEnd_toEndOf="@+id/btnSelecione"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toEndOf="@+id/textValor"
         app:layout_constraintTop_toBottomOf="@+id/spinnerGasto" />
 
@@ -56,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/branco"
@@ -111,7 +112,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:text="Button"
+        android:text="@string/btnSalvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
